@@ -24,8 +24,9 @@ public class isyRegistrationTest {
     }
 
     public static void main(String[] args) {
-
+        //заходим на сайт
         driver.get(SITE_URL);
+        //тут я не помню =) создаём переменную ожидания с определённым нами временем?
         WebDriverWait waitFiveSeconds = new WebDriverWait(driver, 5);
         //ждём видимости крестика модального окна
         waitFiveSeconds.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("premium_information_close"))));
@@ -63,7 +64,7 @@ public class isyRegistrationTest {
         clickButtonCreateMyAccount.click();
         //ждём видимость ссылки на профиль пользователя
         waitFiveSeconds.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("elUserLink"))));
-        //закрываем браузер
+        //закрываем браузер и завершаем работу драйвера
         driver.quit();
     }
 }
