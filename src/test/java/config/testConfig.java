@@ -33,10 +33,10 @@ public class testConfig {
         waitFiveSeconds = new WebDriverWait(driver, 5);
     }
 
-//    @AfterEach
-//    public void finish(){
-//        driver.close();
-//        driver.quit();
-//    }
+    @AfterEach
+    public void finish(){
+        driver.close();
+        driver.quit();
+    }
 
 }
