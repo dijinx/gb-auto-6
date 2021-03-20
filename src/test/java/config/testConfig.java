@@ -56,7 +56,7 @@ public class testConfig {
         integralWorldCard.click();
     }
 
-    //методы чайта номер 2
+    //методы сайта номер 2
     //нажать кнопку "Login/Register"
     public void pressButtonLoginRegister() {
         WebElement clickLoginRegisterButton = waitFiveSeconds
@@ -106,7 +106,7 @@ public class testConfig {
         waitFiveSeconds.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath("/html/body/main/div[1]/div/div[2]/h2")), "orangeviyAvokado"));
     }
 
-    //методы чайта номер 3
+    //методы сайта номер 3
     //кликнуть по выпадающему меню
     public void clickDropdownMenu() {
         WebElement dropDownMenu = waitFiveSeconds.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("cat"))));
@@ -126,7 +126,7 @@ public class testConfig {
     }
 
 
-    //методы чайта номер 4
+    //методы сайта номер 4
     //вводим в поле поиска "Интерстеллар"
     public void enterTextInSearch() {
         WebElement search = driver.findElement(By.xpath("//*[@name = \"kp_query\"]"));
