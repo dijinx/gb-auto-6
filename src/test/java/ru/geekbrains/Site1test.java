@@ -13,11 +13,9 @@ public class Site1test extends testConfig {
         //заходим на сайт
         driver.get(SITE_URL1);
         //находим и нажимаем кнопку "Курсы"
-        WebElement enterButton = waitFiveSeconds.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@href=\"/courses\"]"))));
-        enterButton.click();
+        pressButtonCourse();
         //находим и нажимаем карточку "Интегральный мир"
-        WebElement integralWorldCard = waitFiveSeconds.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("/html/body/div/div/div/div[1]/app-view-theme/div/div[2]/grid/div/div[2]/app-grid-card/app-course-card/div/div/a[2]"))));
-        integralWorldCard.click();
+        pressCardIntegralWorld();
         //проверяем наличие текста
         driver.getPageSource().contains("Алгоритмы машинного обучения требуют структурирования объемов данных," +
                 " а вместе с тем подразумевают постоянное вмешательство человека в процесс обучения искусственного интеллекта." +
